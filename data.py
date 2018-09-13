@@ -82,7 +82,7 @@ def org_to_python(org):
                 delta = completed - started
                 if delta.days:
                     # Error, continue! TODO: Detect overlaps
-                    print "Warning, unclosed value:", line.strip()
+                    print("Warning, unclosed value:", line.strip())
                     continue
                 secs = delta.seconds
                 log.extend(periods(completed, secs, continuous))
